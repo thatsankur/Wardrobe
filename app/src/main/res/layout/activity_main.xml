@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+    <include layout="@layout/layout_main" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:backgroundTint="@color/colorFAB2"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/shuffle_24" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_toRightOf="@id/shuffle"
+        android:layout_marginLeft="60dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/like_24" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/display_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorFAB2"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/list_24"
+            android:layout_below="@+id/save"
+            android:layout_alignStart="@+id/save"
+            android:layout_marginTop="43dp" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_to_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:visibility="invisible"
+            app:elevation="6dp"
+            app:backgroundTint="@color/colorFAB1"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/add_list"
+            android:layout_marginBottom="49dp"
+            android:layout_above="@+id/save"
+            android:layout_alignEnd="@+id/save" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
