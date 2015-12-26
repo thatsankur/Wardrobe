@@ -1,0 +1,18 @@
+Test Project 
+
+with below finction
+Functionality:
+
+1. Home Screen (the above wireframes) with a neat UI.
+
+2. Portrait and landscape support with preserving the state of the app.
+
+3. Support for both camera and gallery to add shirts and pants (need DB support).
+
+4. You can swipe through both shirts and pants horizontally to see new combination. You can use ViewPager class for that.
+
+4. Shuffle button to display random combination of shirt and pants. Need a basic algorithm to show a new combination every time. Basically when to choose from the favourite section or giving completely new combination and all.
+
+5. 'Favourite' button to mark combination as favourite (need DB support)
+
+6. Notification: app should send a notification for the new combination of shirt and pants everyday in the morning at 6 am.
